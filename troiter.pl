@@ -20,9 +20,7 @@
    print("identical to those run via fs_cli >.\n");
  }
  my $con = new ESL::ESLconnection("127.0.0.1", "8021", "ClueCon");
- my $client = $con->api('$command', '$attbs');
- print $client->getBody();
-
+ my $client = $con->api('$command', '$attbs'); 
  my $client = Net::Prometheus->new;
  my $summary = $client->new_summary(
    name => "request_seconds",
