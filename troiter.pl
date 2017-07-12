@@ -23,8 +23,8 @@
  my $client = $con->api('$command', '$attbs'); 
  my $client = Net::Prometheus->new;
  my $summary = $client->new_summary(
-   name => "request_seconds",
-   help => "Summary request processing time",
+   name=>"request_seconds";
+   help=>"Summary request processing time";
  );
 
  sub handle_request
