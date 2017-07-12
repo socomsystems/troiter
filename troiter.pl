@@ -19,7 +19,7 @@
    print("USAGE: troiter arguments must be\n");
    print("identical to those run via fs_cli >.\n");
  }
- my $con = new ESL::ESLconnection('nyc01b.lab.socom.network', "8021", 'ClueCon');
+ my $con = new ESL::ESLconnection('127.0.0.1', "8021", 'ClueCon');
  my $client = $con -> api('$command', '$attbs');
   $client = Net::Prometheus -> new;
  my $summary = $client -> new_summary (
